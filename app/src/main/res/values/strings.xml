@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Randomizer</string>
+    <string name="default_total_counter">[Total Counter]</string>
+    <string name="label_empty" />
+    <string name="label_bar_fragment">Randomizer</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BarFragment">
+
+    <TextView
+        android:id="@+id/totalCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/normalMargin"
+        android:text="@string/default_total_counter"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/totalCounter"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="10"
+        />
+
+    <ProgressBar
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b1"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="20"
+        />
+
+    <ProgressBar
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b2"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="30"
+        />
+
+    <ProgressBar
+        android:id="@+id/b4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b3"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="40"
+        />
+
+    <ProgressBar
+        android:id="@+id/b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b4"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="50"
+        />
+    <ProgressBar
+        android:id="@+id/b6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b5"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="60"
+        />
+
+    <ProgressBar
+        android:id="@+id/b7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b6"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="70"
+        />
+
+    <ProgressBar
+        android:id="@+id/b8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b7"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="80"
+        />
+
+    <ProgressBar
+        android:id="@+id/b9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b8"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="90"
+        />
+
+    <ProgressBar
+        android:id="@+id/b10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/b9"
+        android:layout_margin="@dimen/normalMargin"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:progress="100"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonPauseResume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="@dimen/normalMargin"
+        android:src="@android:drawable/ic_media_pause"
+        android:contentDescription="@string/label_empty" />
+
+    <TextView
+        android:id="@+id/pi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonPauseResume"
+        android:layout_margin="@dimen/normalMargin"
+        android:text="@string/default_total_counter"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="24sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
