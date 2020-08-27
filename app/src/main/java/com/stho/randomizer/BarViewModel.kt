@@ -35,8 +35,9 @@ class BarViewModel : ViewModel() {
 
         val bars: BarData = barsLiveData.value ?: BarData()
 
-        val xValues = List(size) { ThreadLocalRandom.current().nextDouble(min, max) }
-        val yValues = List(size) { ThreadLocalRandom.current().nextDouble(min, max) }
+        val random= ThreadLocalRandom.current()
+        val xValues = List(size) { random.nextDouble(min, max) }
+        val yValues = List(size) { random.nextDouble(min, max) }
         val delta = (max - min) / dimension
         for (i in 0 until size) {
 
@@ -59,6 +60,9 @@ class BarViewModel : ViewModel() {
 
         barsLiveData.postValue(bars)
     }
+
+    private val random: java.util.Random
+        get() = ThreadLocalRandom.current()
 
     companion object {
         private const val DEFAULT_SIZE: Int = 100000
